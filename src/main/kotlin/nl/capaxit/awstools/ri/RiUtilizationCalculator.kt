@@ -25,6 +25,8 @@ fun main(args: Array<String>) {
             .map {
                 RiNormalization(it.key, normalizationFactors[it.key.substringAfter(".")]!! * it.value.size)
             }
+            .groupBy( { it.instanceType.substringBefore(".") }, {it.normalization})
+            .map { RiNormalization(it.key, it.value.sum()) }
             .forEach { println(it) }
 }
 
