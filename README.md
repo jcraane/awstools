@@ -1,6 +1,10 @@
 # AWS tools
 
-Repository containing various tools when working with AWS.
+Repository containing various tools when working with AWS. Most functionality is written in Kotlin.
+
+## General
+
+The easiest way to run the functionality is import the project in IntelliJ. Make sure you have configured the AWS CLI for the correct account.
 
 ## Functionality
 
